@@ -56,6 +56,9 @@
 				  <artifactId>commons-logging</artifactId>
 			   </exclusion>
 			</exclusions>
+			
+			<!--  common logging을 사용하지 않겠다는 것을 넣어줘야함 -> common logging 대신에 simple logging사용  (commonlogging을 아예 다운 받지 않도록)-->
+			
 		</dependency>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -81,6 +84,7 @@
 			기존 Common Logging 를 통해 뿌려지는 로그정보를 slf4j
 			로 연결해 줘야 하는 일종의 어댑터가 필요한데,
 			그것이 jcl-over-slf4j 이다
+			jcl을 기존에 사용했으니깐 그거 에러안나게!똑똑하다아
 		 -->
 		<dependency>                                    
 			<groupId>org.slf4j</groupId>                

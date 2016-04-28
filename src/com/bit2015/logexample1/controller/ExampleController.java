@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ExampleController {
 	
 	/**
-	 *  Logger 생성
+	 *  Logger 생성  ; 이게 interface!!!!!!!!!!!!!!!!!!!!!!!!!
 	 */
 	private static final Log LOG = LogFactory.getLog( ExampleController.class );
 	
@@ -32,6 +32,7 @@ public class ExampleController {
 		 *     직접 테스트 해 보세요.
 		 *  
 		 */
+		//debug: info warn error 다나옴
 		LOG.debug( "#ex1 - debug log" );
 		LOG.info( "#ex1 - info log" );
 		LOG.warn( "#ex1 - warn log" );
